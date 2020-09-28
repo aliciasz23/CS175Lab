@@ -1,6 +1,8 @@
 package mailMerge;
 import java.util.*;
 
+import javax.swing.JOptionPane;
+
 public class MailMergeProject {
 
 	public static void main(String[] args) {
@@ -30,34 +32,16 @@ public class MailMergeProject {
 		System.out.println("Please confirm your address: ");
 		System.out.println(StreetAddress);
 		System.out.println(CityState + ", " +  zipCode);
-		//I'm stuck on getting this to prompt yes or no. If I hit ENTER then an infinite amount 
-		//of mail merges start to print out.
-Scanner kbd = new Scanner (System.in);
-String decision;
-decision = input.nextLine();
-boolean yn = true;
-while (yn)
-{		
-		System.out.println("yes or no");
-		switch(decision)
-		{	
-case "yes":
-			yn = true;
-			break;
-		case "no":
-			yn = false;
-			break;
-			
-			default:
-			
-		System.out.println("please enter again");
-		boolean repeat = true;
-		}
-// if user decides information is correct then the following will be mail merge
+		
+		int response = JOptionPane.showConfirmDialog(null, "Is the address correct ?", "Confirm",JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+		//Now display response result
+		
+		if(response==JOptionPane.YES_OPTION) {
+			//if yes option select..
+			System.out.println("YES");
 		System.out.println("Dear " + firstName + " " + lastName + ",");
 		System.out.println(StreetAddress);
 		System.out.println(CityState + ", " +  zipCode);
 		
-
-	}}
-	}
+		}}
+}
