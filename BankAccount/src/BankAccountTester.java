@@ -1,7 +1,7 @@
 
 
 public class BankAccountTester {
-
+//note for project
 	public static void main(String[] args) {
 		BankAccount myBankAccount = new BankAccount(1000.00);//invokes BankAccount code lines 12-15
 		System.out.println("Bank account beginning balance is: ");
