@@ -29,19 +29,8 @@ public class MailMergeProject {
 		String zipCode;
 		zipCode = input.nextLine();
 		
-		System.out.println("Please confirm your address: ");
-		System.out.println(StreetAddress);
-		System.out.println(CityState + ", " +  zipCode);
-		
-		int response = JOptionPane.showConfirmDialog(null, "Is the address correct ?", "Confirm",JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-		//Now display response result
-		
-		if(response==JOptionPane.YES_OPTION) {
-			//if yes option select..
-			System.out.println("YES");
-		System.out.println("Dear " + firstName + " " + lastName + ",");
-		System.out.println(StreetAddress);
-		System.out.println(CityState + ", " +  zipCode);
-		
-		}}
-}
+		String hello = "Hello World";
+		System.out.println(hello.length());
+		hello=hello.replace("World","Joe");
+		System.out.println(hello);
+	}}
