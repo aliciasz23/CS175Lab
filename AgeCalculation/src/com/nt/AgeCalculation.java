@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
-public class calcs {
+public class AgeCalculation {
 
 	public static void main(String[] args)throws Exception
 	{
