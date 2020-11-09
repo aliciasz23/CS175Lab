@@ -13,9 +13,7 @@ public class AgeCalculation {
 	{
 		//read inputs
 		Scanner sc = new Scanner(System.in);
-      
-      	// SimpleDateFormat class is what's used to translate Strings that are typed in 
-      	// on the JOptionPane into dates. 
+       
       	SimpleDateFormat sdf1 = new SimpleDateFormat("MM/DD/YYYY");
       
       	
@@ -24,7 +22,6 @@ public class AgeCalculation {
       	// Convert user input string into an actual Date object.
       	Date userBirthDate = sdf1.parse(userInputString);	
       	
-      
 	
       	// This determines how many milliseconds the person has been alive.
 		long ms = System.currentTimeMillis() - userBirthDate.getTime();
@@ -46,6 +43,6 @@ public class AgeCalculation {
 		
 		
 		
-		//attempt for github
+		//second attempt for github
     }
 }
